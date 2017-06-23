@@ -10,6 +10,7 @@ import org.dmz.studio.WoWConn.constants.RequestType;
 import org.dmz.studio.WoWConn.response.AbstractResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -25,9 +26,9 @@ public class UiApplication {
     }
     
     @Bean
-    public void run() throws Exception {
+    public CommandLineRunner run() throws Exception {
         
-        Connection connection = Connection.getInstance("API Key", Region.US, Locale.EN_US);
+        Connection connection = Connection.getInstance("a98s92ax3z2gpacag66f2eh252pduce6", Region.US, Locale.EN_US);
         Request request = RequestBuilder.create()
             .setRequestType(RequestType.CHARACTER)
             .addRequiredParamValue(RequestParams.REALM, "zul'jin")
@@ -40,10 +41,13 @@ public class UiApplication {
             .addOptionalParamValues("fields", "stats,talents,titles")
             .build();
 
-        try {
-            AbstractResponse abstractResponse = connection.getRequestData(request);
-        } catch (Exception e) {
-            log.info(e.toString());
-        }
+        return args -> {
+            try {
+                AbstractResponse abstractResponse = connection.getRequestData(request);
+                log.info(abstractResponse.toString());
+            } catch (Exception e) {
+                log.info(e.toString());
+            }
+        };
     }
 }
