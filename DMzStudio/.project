@@ -3,6 +3,8 @@
 	<name>DMzStudio</name>
 	<comment></comment>
 	<projects>
+		<project>dmz-studio-conn</project>
+		<project>dmz-studio-ui</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

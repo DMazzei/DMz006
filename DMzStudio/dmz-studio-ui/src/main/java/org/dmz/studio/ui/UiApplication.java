@@ -1,13 +1,13 @@
 package org.dmz.studio.ui;
 
-import org.dmz.studio.WoWConn.Connection;
-import org.dmz.studio.WoWConn.Request;
-import org.dmz.studio.WoWConn.builder.RequestBuilder;
-import org.dmz.studio.WoWConn.constants.Locale;
-import org.dmz.studio.WoWConn.constants.Region;
-import org.dmz.studio.WoWConn.constants.RequestParams;
-import org.dmz.studio.WoWConn.constants.RequestType;
-import org.dmz.studio.WoWConn.response.AbstractResponse;
+import org.dmz.studio.conn.Connection;
+import org.dmz.studio.conn.Request;
+import org.dmz.studio.conn.builder.RequestBuilder;
+import org.dmz.studio.conn.constants.Locale;
+import org.dmz.studio.conn.constants.Region;
+import org.dmz.studio.conn.constants.RequestParams;
+import org.dmz.studio.conn.constants.RequestType;
+import org.dmz.studio.conn.response.AbstractResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

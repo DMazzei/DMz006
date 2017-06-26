@@ -10,7 +10,7 @@
 
     <modules>
         <module>dmz-studio-ui</module>
-        <module>WoWConn</module>
+        <module>dmz-studio-conn</module>
     </modules>
 
 </project>
