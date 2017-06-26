@@ -8,6 +8,7 @@ import org.dmz.studio.conn.constants.Region;
 import org.dmz.studio.conn.constants.RequestParams;
 import org.dmz.studio.conn.constants.RequestType;
 import org.dmz.studio.conn.response.AbstractResponse;
+import org.dmz.studio.conn.response.CharacterProfile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -33,18 +34,18 @@ public class UiApplication {
             .setRequestType(RequestType.CHARACTER)
             .addRequiredParamValue(RequestParams.REALM, "zul'jin")
             .addRequiredParamValue(RequestParams.CHARACTER_NAME, "gothgull")
-            .addOptionalParamValues("fields", "achievements,appearance,feed")
-            .addOptionalParamValues("fields", "guild,hunterPets,items")
-            .addOptionalParamValues("fields", "mounts,pets,petSlots")
-            .addOptionalParamValues("fields", "professions,progression,pvp")
-            .addOptionalParamValues("fields", "quests,reputation,statistics")
-            .addOptionalParamValues("fields", "stats,talents,titles")
+//            .addOptionalParamValues("fields", "achievements,appearance,feed")
+//            .addOptionalParamValues("fields", "guild,hunterPets,items")
+//            .addOptionalParamValues("fields", "mounts,pets,petSlots")
+//            .addOptionalParamValues("fields", "professions,progression,pvp")
+//            .addOptionalParamValues("fields", "quests,reputation,statistics")
+//            .addOptionalParamValues("fields", "stats,talents,titles")
             .build();
 
         return args -> {
             try {
-                AbstractResponse abstractResponse = connection.getRequestData(request);
-                log.info(abstractResponse.toString());
+                CharacterProfile responseCharacter = connection.getRequestData(request);
+                log.info(responseCharacter.getName());
             } catch (Exception e) {
                 log.info(e.toString());
             }

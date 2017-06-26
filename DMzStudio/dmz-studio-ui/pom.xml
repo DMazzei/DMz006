@@ -27,7 +27,7 @@
 	<dependencies>
         <dependency>
             <groupId>org.dmz.studio</groupId>
-            <artifactId>WoWConn</artifactId>
+            <artifactId>dmz-studio-conn</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
