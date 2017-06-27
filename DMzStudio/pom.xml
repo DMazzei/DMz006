@@ -11,6 +11,7 @@
     <modules>
         <module>dmz-studio-ui</module>
         <module>dmz-studio-conn</module>
+		<module>dmz-studio-repository</module>
     </modules>
 
 </project>

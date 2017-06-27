@@ -1,0 +1,6 @@
+org\dmz\studio\repository\Configuration.class
+org\dmz\studio\repository\Dataset.class
+org\dmz\studio\repository\DatasetRepository.class
+org\dmz\studio\repository\Fields.class
+org\dmz\studio\repository\RepositoryConfiguration.class
+org\dmz\studio\repository\BaseRepository.class
