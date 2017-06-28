@@ -1,0 +1,42 @@
+db.createCollection("dataset")
+db.dataset.insert([
+   {
+      apiMethod: 'CHARACTER', 
+      description: '',
+      fields: [	
+         { name: 'achievements' },
+		 { name: 'appearance' },
+		 { name: 'feed' },
+		 { name: 'guild' },
+		 { name: 'hunterPets' },
+		 { name: 'items' },
+		 { name: 'mounts' },
+		 { name: 'pets' },
+		 { name: 'petSlots' },
+		 { name: 'professions' },
+		 { name: 'progression' },
+		 { name: 'pvp' },
+		 { name: 'quests' },
+		 { name: 'reputation' },
+		 { name: 'statistics' },
+		 { name: 'stats' },
+		 { name: 'talents' },
+		 { name: 'titles' }
+      ]
+   }
+])
+
+db.createCollection("auctionIndexFiles")
+db.auctionIndexFiles.insert([
+	{
+		realm: 'zul'jin',
+		consumed: false,
+		files: [
+			{
+				"url": "http://auction-api-us.worldofwarcraft.com/auction-data/41e38d0971d62982b4d45941b790d8d2/auctions.json",
+				"lastModified": 1498658294000
+			}
+		]
+	}
+])
+
