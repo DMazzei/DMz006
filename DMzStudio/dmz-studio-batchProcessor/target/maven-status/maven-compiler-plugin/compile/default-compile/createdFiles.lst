@@ -1,0 +1,3 @@
+org\dmz\studio\batchProcessor\Application.class
+org\dmz\studio\batchProcessor\BatchConfiguration.class
+org\dmz\studio\batchProcessor\JobCompletionNotificationListener.class
