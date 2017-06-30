@@ -1,6 +1,7 @@
-org\dmz\studio\repository\Configuration.class
-org\dmz\studio\repository\Dataset.class
+org\dmz\studio\repository\AuctionIndexFilesRepository.class
+org\dmz\studio\repository\model\Dataset.class
+org\dmz\studio\repository\model\AuctionFile.class
+org\dmz\studio\repository\model\AuctionIndexFiles.class
+org\dmz\studio\repository\model\Fields.class
 org\dmz\studio\repository\DatasetRepository.class
-org\dmz\studio\repository\Fields.class
 org\dmz\studio\repository\RepositoryConfiguration.class
-org\dmz\studio\repository\BaseRepository.class

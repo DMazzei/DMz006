@@ -9,11 +9,12 @@ import org.dmz.studio.conn.response.data.character.*;
 import org.dmz.studio.conn.response.data.guild.*;
 
 public enum RequestType {
-    CHARACTER("wow/character/<realm>/<characterName>", CharacterProfile.class, RequestParams.REALM, RequestParams.CHARACTER_NAME),
-    CHALLENGE_MODE_REALM_LEADERBOARD("wow/challenge/<realm>", RealmLeaderboard.class, RequestParams.REALM),
     ACHIEVEMENT("wow/achievement/<id>", Achievement.class, RequestParams.ID),
+    AUCTION("wow/auction/data/<realm>", Auction.class, RequestParams.REALM),
     BOSS("wow/boss/<id>", Boss.class, RequestParams.ID),
     BOSS_MASTER_LIST("wow/boss/", BossMasterList.class),
+    CHARACTER("wow/character/<realm>/<characterName>", CharacterProfile.class, RequestParams.REALM, RequestParams.CHARACTER_NAME),
+    CHALLENGE_MODE_REALM_LEADERBOARD("wow/challenge/<realm>", RealmLeaderboard.class, RequestParams.REALM),
     GUILD("wow/guild/<realm>/<guildName>", GuildProfile.class, RequestParams.REALM, RequestParams.GUILD_NAME),
     MOUNT_MASTER_LIST("wow/mount/", MountMasterList.class),
     PET_MASTER_LIST("wow/pet/", PetMasterList.class),

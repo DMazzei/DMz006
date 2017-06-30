@@ -1,0 +1,7 @@
+org\dmz\studio\auctionProcessor\ScheduledAuctionTasks.class
+org\dmz\studio\auctionProcessor\ScheduledAuctionTasks$1.class
+org\dmz\studio\auctionProcessor\Application.class
+org\dmz\studio\auctionProcessor\model\AuctionIndexFile.class
+org\dmz\studio\auctionProcessor\model\AuctionFile.class
+org\dmz\studio\batchProcessor\BatchConfiguration.class
+org\dmz\studio\batchProcessor\JobCompletionNotificationListener.class

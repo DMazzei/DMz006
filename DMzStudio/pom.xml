@@ -12,6 +12,8 @@
         <module>dmz-studio-ui</module>
         <module>dmz-studio-conn</module>
 		<module>dmz-studio-repository</module>
+		<module>dmz-studio-auctionProcessor</module>
+		<module>dmz-studio-scheduledTasks</module>
     </modules>
 
 </project>

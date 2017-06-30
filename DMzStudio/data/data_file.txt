@@ -29,14 +29,19 @@ db.dataset.insert([
 db.createCollection("auctionIndexFiles")
 db.auctionIndexFiles.insert([
 	{
-		realm: 'zul'jin',
-		consumed: false,
-		files: [
-			{
-				"url": "http://auction-api-us.worldofwarcraft.com/auction-data/41e38d0971d62982b4d45941b790d8d2/auctions.json",
-				"lastModified": 1498658294000
-			}
-		]
+	  realm: "zul'jin",
+	  files: [
+	  	{
+		  url: 'http://auction-api-us.worldofwarcraft.com/auction-data/41e38d0971d62982b4d45941b790d8d2/auctions.json',
+		  lastModified: 1498658294000,
+		  consumed: false
+	  	},
+	  	{
+		  url: 'http://auction-api-us.worldofwarcraft.com/auction-data/41e38d0971d62982b4d45941b790d8d2/auctions.json',
+		  lastModified: 1498723094000,
+		  consumed: false
+	  	}
+	  ]
 	}
 ])
 
